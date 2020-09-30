@@ -1,0 +1,23 @@
+unit Document;
+
+interface
+
+type
+  TDocument = class
+    private
+    Fdetails: String;
+    FrejectionReason: String;
+    FapprovalStatus: String;
+    Fdescription: String;
+    Ftype: String;
+    public
+    property &type : String read Ftype write Ftype;
+    property description : String read Fdescription write Fdescription;
+    property approvalStatus : String read FapprovalStatus write FapprovalStatus;
+    property rejectionReason : String read FrejectionReason write FrejectionReason;
+    property details : String read Fdetails write Fdetails;
+  end;
+
+implementation
+
+end.
