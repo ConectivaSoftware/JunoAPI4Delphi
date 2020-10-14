@@ -1,0 +1,74 @@
+package JunoApi4Delphi;
+
+{$R *.res}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DEFINE DEBUG}
+{$ENDIF IMPLICITBUILDING}
+{$IMPLICITBUILD ON}
+
+requires
+  rtl,
+  dbrtl,
+  bindengine,
+  bindcomp,
+  FireDAC,
+  FireDACCommonDriver,
+  FireDACCommon;
+
+contains
+  JunoApi4Delphi in 'src\JunoApi4Delphi.pas',
+  JunoApi4Delphi.Interfaces in 'src\services\JunoApi4Delphi.Interfaces.pas',
+  JunoApi4Delphi.Config in 'src\services\JunoApi4Delphi.Config.pas',
+  SandboxEnvironment in 'src\services\SandboxEnvironment.pas',
+  ProductionEnviroment in 'src\services\ProductionEnviroment.pas',
+  AuthorizationService in 'src\services\AuthorizationService.pas',
+  AuthorizationToken in 'src\model\AuthorizationToken.pas',
+  JunoApi4DelphiManager in 'src\services\JunoApi4DelphiManager.pas',
+  DataService in 'src\services\DataService.pas',
+  Banks in 'src\model\Banks.pas',
+  JunoAi4DelphiResources in 'src\services\JunoAi4DelphiResources.pas',
+  Document in 'src\model\Document.pas',
+  EventType in 'src\model\EventType.pas',
+  Webhook in 'src\model\Webhook.pas',
+  ChargeService in 'src\services\ChargeService.pas',
+  BalanceService in 'src\services\BalanceService.pas',
+  CreditCardService in 'src\services\CreditCardService.pas',
+  CredentialsService in 'src\services\CredentialsService.pas',
+  BillPaymentService in 'src\services\BillPaymentService.pas',
+  DigitalAccountService in 'src\services\DigitalAccountService.pas',
+  DocumentService in 'src\services\DocumentService.pas',
+  NotificationService in 'src\services\NotificationService.pas',
+  PaymentService in 'src\services\PaymentService.pas',
+  TransferService in 'src\services\TransferService.pas',
+  Balance in 'src\model\Balance.pas',
+  Pkg.Json.DTO in 'src\model\Pkg.Json.DTO.pas',
+  CompanyType in 'src\model\CompanyType.pas',
+  Charge in 'src\model\Charge.pas',
+  CardHash in 'src\utils\CardHash.pas',
+  PlansService in 'src\services\PlansService.pas',
+  Billing in 'src\services\Billing.pas',
+  Split in 'src\model\Split.pas',
+  SubscriptionsService in 'src\services\SubscriptionsService.pas';
+
+end.
